@@ -52,7 +52,8 @@ export default function DftCube(opts) {
     camera.position.x = -500;
 
     scene = new THREE.Scene();
-    scene.background = new THREE.Color( 0x000000 );
+    // scene.background = new THREE.Color( 0x000000 );
+    scene.background = 'transparent';
 
     var cubeGeo = new THREE.BoxGeometry(400,400,400);
     var wireframeCubeGeo = new THREE.EdgesGeometry(cubeGeo);
@@ -109,7 +110,7 @@ export default function DftCube(opts) {
     // Using CanvasRenderer *purely* to avoid some artifacting that happens
     // with the WebGLRenderer. It should definitely be deprecated.
     // This requires use of a version of THREE.js prior to 0.97.0
-    renderer = new THREE.CanvasRenderer();
+    renderer = new THREE.CanvasRenderer({ alpha: true });
 
     renderer.setPixelRatio(window.devicePixelRatio);
 

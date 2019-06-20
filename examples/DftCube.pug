@@ -1,0 +1,21 @@
+html
+  head
+    script(src="/lib/haecceity.min.js")
+    style.
+      #dft-cube {
+        height: 300px;
+        width: 300px;
+        background: black;
+        mix-blend-mode: overlay;
+      }
+  body
+    h1 Examples
+    div
+      p All of the examples work in basically the same way. Simply create a new instance (with optional settings) and mount it to an element.
+      p The canvas background for all visualizations are transparent by default.
+    h3 DFT Cube
+      #dft-cube
+
+    script.
+      var cube = new haecceity.DftCube();
+      cube.mount('dft-cube');
