@@ -3,5 +3,12 @@
   width: 300px;
   background: black;
   mix-blend-mode: overlay;
-}</style></head><body><h1>Examples</h1><div><p>All of the examples work in basically the same way. Simply create a new instance (with optional settings) and mount it to an element.</p><p>The canvas background for all visualizations are transparent by default.</p></div><h3>DFT Cube<div id="dft-cube"></div></h3><script>var cube = new haecceity.DftCube();
-cube.mount('dft-cube');</script></body></html>
+}</style></head><body><h1>Examples</h1><div><p>All of the examples work in basically the same way. Simply create a new instance (with optional settings) and mount it to an element.</p><p>The canvas background for all visualizations are transparent by default.</p></div><h3>DFT Cube<div id="dft-cube"></div></h3><p>The DftCube can be created with the following options:</p><pre>const cube = new haecceity.DftCube({
+  count: 100, // default 100
+  speed: 1, // default 1
+  cubeBaseColor: '#00f', // default #00f
+  cubeGlowColor: 'somethingorother', // default some kind of crazy random hardcoded color
+})
+</pre><h3>Periodic Table<div id="periodic-table"></div></h3><div> <p>The periodic table is designed to take in multiple color-schemes and to switch between three layouts.</p><p>Out of the box, it includes CPK color assignment and two types of coloring by element group, one associated with the Stowe layout</p><p>It can also switch between three separate layouts:<li>Mendaleev</li><li>Flattened Stowe</li><li>3D Stowe</li></p><p>In Stowe mode, there is an optional overlay to explain the Stowe layout</p></div><h3></h3><script>var cube = new haecceity.DftCube();
+cube.mount('dft-cube');
+//- var periodicTable = new haecceity.PeriodicTable()</script></body></html>

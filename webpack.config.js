@@ -33,7 +33,7 @@ const config = {
       {
         test: /(\.jsx|\.js)$/,
         loader: 'babel-loader',
-        exclude: /(node_modules|bower_components)/
+        exclude: /(node_modules|bower_components)/,
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -55,6 +55,8 @@ const config = {
     alias: {
       'three/CanvasRenderer': path.join(__dirname, 'vendor/three/CanvasRenderer.js'),
       'three/Projector': path.join(__dirname, 'vendor/three/Projector.js'),
+      'three/CSS3DRenderer': path.join(__dirname, 'vendor/three/CSS3DRenderer.js'),
+      'three/TrackballControls': path.join(__dirname, 'vendor/three/TrackballControls.js'),
     }
   }
 };

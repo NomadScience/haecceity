@@ -15,7 +15,30 @@ html
       p The canvas background for all visualizations are transparent by default.
     h3 DFT Cube
       #dft-cube
+    p The DftCube can be created with the following options:
+    pre.
+     const cube = new haecceity.DftCube({
+       count: 100, // default 100
+       speed: 1, // default 1
+       cubeBaseColor: '#00f', // default #00f
+       cubeGlowColor: 'somethingorother', // default some kind of crazy random hardcoded color
+     })
+
+    h3 Periodic Table
+      #periodic-table
+    div 
+      p The periodic table is designed to take in multiple color-schemes and to switch between three layouts.
+      p Out of the box, it includes CPK color assignment and two types of coloring by element group, one associated with the Stowe layout
+      p It can also switch between three separate layouts:
+        li Mendaleev
+        li Flattened Stowe
+        li 3D Stowe
+      p In Stowe mode, there is an optional overlay to explain the Stowe layout
+    h3
+
+
 
     script.
       var cube = new haecceity.DftCube();
       cube.mount('dft-cube');
+      //- var periodicTable = new haecceity.PeriodicTable()
