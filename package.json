@@ -1,6 +1,6 @@
 {
   "name": "haecceity",
-  "version": "1.0.2",
+  "version": "0.2.0",
   "description": "Haecceity MatSci Browser Viz, yo",
   "main": "lib/haecceity.js",
   "scripts": {

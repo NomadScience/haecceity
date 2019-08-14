@@ -8,9 +8,11 @@ import TWEEN from '@tweenjs/tween.js';
 console.log(THREE);
 
 import DftCube from './DftCube';
+import PeriodicTable from './PeriodicTable';
 
 export default {
   DftCube,
+  PeriodicTable,
   THREE,
   TWEEN,
 };

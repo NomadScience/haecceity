@@ -46,6 +46,7 @@ const config = {
   plugins: [
     new webpack.ProvidePlugin({
       'THREE': 'three/build/three',
+      'TWEEN': '@tweenjs/tween.js',
     }),
 
   ],
